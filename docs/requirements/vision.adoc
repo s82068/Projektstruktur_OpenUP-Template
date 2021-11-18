@@ -1,18 +1,18 @@
-= Vision: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Vision: Cocktailversand
+Nick Kemter <s82068@htw-dresden.de>; 
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des <Projektname-Systems> zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <Projektname-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Cocktailversand zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <Projektname-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das <Projektthema-System>, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das <Projektthema-System>, das von Nick Kemter entwickelt wird. Das System wird es Zielkunden erlauben, über eine Webseite vordefinierte aber auch personalisierte Cocktails zu bestellen, damit sie nicht in die Bar kommen müssen und damit der Barbetreiber endlich auch die personalisierten Cocktails anbieten kann.
 
 === Definitionen, Akronyme und Abkürzungen
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -82,7 +82,12 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|[Benennung des Stakeholder-Typs.]	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Barbetreiber	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Versanddienstleister | Ist ein standardmäßiger Paketdienstleister, der die Cocktails verschickt| Kümmert sich um Bestellungen. Liefert Daten wann Lieferung möglich und leistet Livetracking, sowie Versandbestätigung(en)
+|Webhoster|stellt Dienstumgebung bereit (Webseite und Datenbank)| stellt den Webaudtritt dar und ermöglicht dort die Bestellung. Alles wird in Datenbanken gespeichert 
+|Kunde|bestellt bei der Bar|
+|Bezahldienstleister|kümmert sich um die Bezahlung und Rechnungen|
+|Gesetzgeber|stellt Regelungen zwischen Kunde und Barbetreiber| Jugenschutz, Vertragsfreiheit, Fern-Absatz-Geschäft, Impressumspflicht
 |===
 
 === Benutzerumgebung
