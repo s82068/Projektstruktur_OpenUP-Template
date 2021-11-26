@@ -4,19 +4,32 @@
 //<Kurze Beschreibung des Use Case>
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur 1 Name>
+==== Kunde
+* bestellt bei dem Cocktailversand. 
+
+
+==== Barbetreiber
+* benötigt die Webseite um seine Ware zu verkaufen -> Adminzugriff
+* dafür brauch er Zugriff auf die Informationen die der Kunde bei anderen Stakeholdern angegeben hat bzw. teilt der Barbetreiber Informationen mit ihnen 
+* u.a. muss die Zahlung, Bestellung und eventuelle Rückfragen/Beschwerden bearbeitet werden
+
+==== Versanddienstleister
+* erhält die Adresse 
+* bestätigt u.a. Liefertermin, Versand, Zustellung
+* ist 1. Ansprechpartner bei Versandproblemen (wenn das Paket bei ihnen war)
+
+==== Bezahldienstleister
+* kümmert sich um die sichere Transaktion des Geldes
+* bestätigt den Zahlungseingang bei Kunde und Barbetreiber
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-<Vorbedingung 1>
+* vorbedinngung
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. 	…
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn <Akteur> X macht
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
