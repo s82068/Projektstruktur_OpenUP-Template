@@ -14,23 +14,55 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema
 
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
+"--" Am Ende heißt, dass es richtig ist, dass andere wurde nicht abgenommen
 == Systemweite funktionale Anforderungen
-//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+* SWFA01: Daten (z.B. Waren im Warenkorb) bleiben bei reload der Seite erhalten
+**Überprüfung: Waren in Datenkorb tun und Seite reloaden und schauen, ob Waren noch da sind 
+
+* SWFA02: System muss Nutzerdaten vor unerlaubtem Zugriff schützen. 
+** Überprüfung: Hacker beauftragen, der versuchen soll an die Daten zu kommen --
+
+* SWFA03: Jeder Kunde erhält eine Bestellbestätigung
+** Überprüfung: „Fake-Einkäufe“, bei welchen eine Email innerhalb von 5 Minuten ankommen muss
+
+* SWFA04: Volljährigkeitsprüfung der 
+** Überprüfung: System muss verhindern, dass Minderjärige Bestellungen aufgeben --
+
+* SWFA05: System muss in der Lage sein, Daten in einer druckoptimierten Ansicht darzustellen
+** Überprüfung: Bestellungen müssen gedrückt werden (z.B. Lieferung, Beleg). Prüfe nach Verfollständigkeit und Aussehen --
+
+
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
-//Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+* SWAU01: Jede Aktion (z.B. Warenauswahl, Bezahlen) muss schnell erledig bar sein.
+** Überprüfung: Alles muss mit maximal 5 Mausklicks machbar sein.
+
+* SWAU02: Neukunde muss schnell und einfach lernen, wie das System funktioniert 
+    **Unteranforderung von SWAU02: Aussehen muss an andere Shops erinnern. Knöpfe und Funktionen müssen eindeutig sein. --
+
+* SWAU03: Sucheingabe der Nutzer durch Vorschläge unterstützt 
+** Überprüfung 
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 === Effizienz (Performance)
-// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+* NFAP01: Seite (0,5 sekunden), Pop-Ups (0,25 Sekunden) etc. geladen. Bei Nutzung von 10 gleichzeitigen Nutzern 
+** Überprüfung: Seiten, Popups öffnen und überprüfen wie schnell es geladen ist
+Überprüfung mehrfach wiederholen und schauen ob es immer klappt. --
+
+* NFAP02: Die Seite muss von 10 Benutzern (Kunden/Admin etc.) zeitgleich benutzbar sein. 
+** Überprüfung: Belastungstest mit 10 Benutzern. Seite darf nicht abstürzen, langsamer werden. Daten dürfen nicht verloren gehen.
+
 
 === Wartbarkeit (Supportability)
-// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+* NFAS01: Neue Waren müssen leicht hinzufügbar sein. 
+//Lösung: Cocktailversender besitzt Tools mit der der Upload einfach funktioniert. Diese Tools brauchen bloß Bilder, Texte, Daten die automatisch an die richtige Stelle der Seite integriert werden.
+** Überprüfung: Test-Upload von neuer Ware und Ansicht auf Webseite. Machbar innerhalb von 30 Minuten. --
+
 
 == Zusätzliche Anforderungen
 === Einschränkungen
